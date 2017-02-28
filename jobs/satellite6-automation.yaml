@@ -394,7 +394,7 @@
             recipients: ${{QE_EMAIL_LIST}}
             success: true
             failure: true
-            subject: 'Upgrade Status to {satellite_version} on {os} ${{BUILD_LABEL}} - $BUILD_STATUS'
+            subject: 'Upgrade Status to {satellite_version} on {os} - ${{BUILD_LABEL}} - $BUILD_STATUS'
             body: |
                 ${{FILE, path="upgrade_highlights"}}
                 Build URL: ${{BUILD_URL}}

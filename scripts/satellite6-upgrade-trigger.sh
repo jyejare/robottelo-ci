@@ -39,3 +39,8 @@ fi
 
 # Longrun to run upgrade on Satellite, capsule and clients
 fab -u root product_upgrade:'longrun'
+
+# Post Upgrade archive logs from log analyzer tool
+if [ -d upgrade-diff-logs ]; then
+    tar -czf Log_Analyzer_Logs.tar.xz upgrade-diff-logs
+fi
