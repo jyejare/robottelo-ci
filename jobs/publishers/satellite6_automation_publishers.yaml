@@ -3,5 +3,6 @@
     publishers:
         - junit:
             results: '*-results.xml'
+            allow-empty-results: true
             claim-build: true
         - claim-build
